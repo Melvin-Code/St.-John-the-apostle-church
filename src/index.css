@@ -50,6 +50,41 @@ a{
   /* background-color: red; */
 
 }
+.navbar .menu{
+  
+    display: block;
+    margin: 0 ;
+    position: relative;
+   }
+
+  .navbar .menu > div > a {
+    background: #fff;
+  color: #000;
+  display: block;
+  padding: 10px 20px;
+  text-align: left;
+  text-decoration: none;
+   }
+   .navbar .menu .dropdwn-list{
+    background: white;
+    text-align: left;
+    /* height: 0; */
+    left: 0;
+    width: fit-content !important;
+    opacity: 0;
+    position: absolute;
+    transition: all .5s ease;
+    top: 100%;
+    width: 100%;
+    z-index: 1;
+   }
+   .navbar .menu :hover .dropdwn-list {
+    height: fit-content;
+    
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 .navbar .navbar-box .navbar-box-btn{
   font-size: 2rem;
   color: black;
@@ -59,8 +94,6 @@ a{
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
-  /* overflow: hidden; */
-  /* background-color: red; */
   width: fit-content ;
   margin: 0rem 2rem;
   font-family: 'Quicksand', sans-serif;
@@ -85,33 +118,11 @@ a{
   right: 0;
 }
 .navbar .navbar-box .navbar-box-btn .dropdwn-container{
-  height: fit-content;
-  overflow: hidden;
-  position: absolute;
-  background-color: white;
-  z-index: 50;
-  top: 100%;
-  text-align: left;
-  
-  width: fit-content;
-  
-  
-} 
-#sacr{
-left: -1rem;
-/* height: 0; */
+  position: relative;
 }
-#about{
-height: 0 ;
-width: 20rem;
-}
-#more{
-left: -13rem;
-width: 19rem;
-height: 0;
-}
-.navbar .navbar-box .navbar-box-btn .dropdwn-container .dropdwn-list{
-  border: 1px solid black;
+
+ .navbar .navbar-box .navbar-box-btn .dropdwn-container .dropdwn-list{
+  border: .1px solid black;
   
 }
 .navbar .navbar-box .navbar-box-btn .dropdwn-container .dropdwn-list .dropdwn-text{
@@ -122,33 +133,14 @@ height: 0;
   background-color: rgba(0, 0, 0, 0.295);
  
 }
-.navbar .navbar-box .navbar-box-btn .start{
-height: 0;
+#sacr{
+  width: 15rem;
 }
-.navbar .navbar-box .navbar-box-btn .drop{
-  height: fit-content;
-  animation: goingdwn 1s;
+#more{
+  left: -10rem !important ;
+  width: 20rem !important;
 }
-.navbar .navbar-box .navbar-box-btn .hide{
-height: 0;
-animation: goingup 1s;
-}
-@keyframes goingdwn {
-  0%{
-    height: 0
-  }
-  100%{
-    height: fit-content;
-  }
-}
-@keyframes goingup {
-  0%{
-    height: fit-content;
-  }
-  100%{
-    height: 0;
-  }
-}
+
 /*//////////////NavBar////////////////*/
 /*//////////////NavBar////////////////*/
 /*//////////////NavBar////////////////*/

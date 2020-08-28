@@ -41,10 +41,10 @@ class NavBar extends Component {
             <span className="title-site--sub">CATHOLIC CHURCH</span>
           </h1>
         </Link>
-        <div className="navbar-box">
-          <div onMouseOver={()=>this.droper(1)} onMouseOut={()=>this.hide(1)} className="navbar-box-btn">
+        <div className="navbar-box menu">
+          <div className="navbar-box-btn">
             <Link to="/sacraments">Sacraments</Link>
-            <div   id='sacr' className={`dropdwn-container ${this.animate(1)}`}>
+            <div   id='sacr' className='dropdwn-container'>
               <ul className="dropdwn-list">
                 <Link to="/sacraments">
                   <p className="dropdwn-text">Baptism</p>
@@ -91,8 +91,8 @@ class NavBar extends Component {
           </div>
           <div className="navbar-box-btn">
             <Link to="/more">More</Link>
-            <div id="more" className="dropdwn-container">
-              <ul className="dropdwn-list">
+            <div className="dropdwn-container">
+              <ul id="more"  className="dropdwn-list">
                 <Link to="/more">
                   <p className="dropdwn-text">Mass Scheldue</p>
                 </Link>
