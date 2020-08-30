@@ -45,7 +45,7 @@ class NavBar extends Component {
           <div className="navbar-box-btn">
             <Link to="/sacraments">Sacraments</Link>
             <div   id='sacr' className='dropdwn-container'>
-              <ul className="dropdwn-list">
+              <ul className="dropdwn-list sacra">
                 <Link to="/sacraments">
                   <p className="dropdwn-text">Baptism</p>
                 </Link>
@@ -73,7 +73,7 @@ class NavBar extends Component {
           <div className="navbar-box-btn">
             <Link to="/about">About our Parish</Link>
             <div id="about" className="dropdwn-container">
-              <ul className="dropdwn-list">
+              <ul className="dropdwn-list abou">
                 <Link to="/about">
                   <p className="dropdwn-text">History</p>
                 </Link>
@@ -92,7 +92,7 @@ class NavBar extends Component {
           <div className="navbar-box-btn">
             <Link to="/more">More</Link>
             <div className="dropdwn-container">
-              <ul id="more"  className="dropdwn-list">
+              <ul id="more"  className="dropdwn-list mor">
                 <Link to="/more">
                   <p className="dropdwn-text">Mass Scheldue</p>
                 </Link>

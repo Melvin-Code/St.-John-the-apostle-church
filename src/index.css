@@ -68,7 +68,7 @@ a{
    .navbar .menu .dropdwn-list{
     background: white;
     text-align: left;
-    /* height: 0; */
+    height: 0;
     left: 0;
     width: fit-content !important;
     opacity: 0;
@@ -76,12 +76,27 @@ a{
     transition: all .5s ease;
     top: 100%;
     width: 100%;
+    border: solid black 1px;
     z-index: 1;
+    overflow: hidden;
+    transition: all .2s !important;
    }
-   .navbar .menu :hover .dropdwn-list {
-    height: fit-content;
-    
+   .navbar .menu :hover  .sacra {
+    height: 34.3rem;
     opacity: 1;
+    /* opacity: 1; */
+    transform: translateY(0);
+  }
+  .navbar .menu :hover  .abou {
+    height: 19.5rem;
+    opacity: 1;
+    /* opacity: 1; */
+    transform: translateY(0);
+  }
+  .navbar .menu :hover  .mor {
+    height: 19.5rem;
+    opacity: 1;
+    /* opacity: 1; */
     transform: translateY(0);
   }
   
@@ -122,7 +137,7 @@ a{
 }
 
  .navbar .navbar-box .navbar-box-btn .dropdwn-container .dropdwn-list{
-  border: .1px solid black;
+  /* border: .1px solid black; */
   
 }
 .navbar .navbar-box .navbar-box-btn .dropdwn-container .dropdwn-list .dropdwn-text{
