@@ -28,12 +28,16 @@ a{
 /*//////////////NavBar////////////////*/
 
 .navbar{
-  background-color: white;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 9rem;
-  box-shadow: 0px -3px 8px black
+  width: 100vw;
+  /* box-shadow: 0px -3px 8px black; */
+  position: fixed;
+  z-index: 5;
+  color: #fff;
 }
 .navbar .title-site{
   margin-left: 2rem;
@@ -42,6 +46,7 @@ a{
   text-align: left;
   font-size: 3rem;
   font-weight: 700;
+  color: #fff;
   font-family: 'Playfair Display', serif;
 }
 .navbar .navbar-box {
@@ -58,8 +63,8 @@ a{
    }
 
   .navbar .menu > div > a {
-    background: #fff;
-  color: #000;
+    
+  color: #fff;
   display: block;
   padding: 10px 20px;
   text-align: left;
@@ -76,10 +81,10 @@ a{
     transition: all .5s ease;
     top: 100%;
     width: 100%;
-    border: solid black 1px;
+    border: solid white 1px;
     z-index: 1;
     overflow: hidden;
-    transition: all .2s !important;
+    transition: all .3s !important;
    }
    .navbar .menu :hover  .sacra {
     height: 34.3rem;
@@ -120,7 +125,7 @@ a{
   left: 0;
   right: 100%;
   bottom: 0;
-  background: black;
+  /* background: black; */
   height: 4px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -136,10 +141,6 @@ a{
   position: relative;
 }
 
- .navbar .navbar-box .navbar-box-btn .dropdwn-container .dropdwn-list{
-  /* border: .1px solid black; */
-  
-}
 .navbar .navbar-box .navbar-box-btn .dropdwn-container .dropdwn-list .dropdwn-text{
   padding: 1.2rem;
  
@@ -159,3 +160,62 @@ a{
 /*//////////////NavBar////////////////*/
 /*//////////////NavBar////////////////*/
 /*//////////////NavBar////////////////*/
+
+/*//////////////Home////////////////*/
+/*//////////////Home////////////////*/
+/*//////////////Home////////////////*/
+
+.homePage .hp-herocontainer {
+  background-image: url(https://www.miamiarch.org/Atimo_s/Parishes/St%20John%20the%20Apostle.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  height: 70rem;
+  background-position: center;
+  width: 100vw;
+  border: solid black 1px;
+  position: relative;
+}
+.homePage .hp-herocontainer .herocontainer-slogan{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3rem;
+}
+.homePage .hp-herocontainer .herocontainer-welcomecontainer{
+  width: 100%;
+  height: 20rem;
+  background-color: rgba(0, 0, 0, 0.548);
+  position: absolute;
+  bottom: 0;
+}
+.homePage .hp-herocontainer .herocontainer-welcomecontainer .herocontainer-welcometext{
+  color: white;
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 2rem 0rem 0 0rem;
+}
+.homePage .hp-herocontainer .herocontainer-welcomecontainer .herocontainer-welcometext--sub{
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding: .5rem 5rem 2rem 5rem;
+}
+.homePage .homepage-links{
+  /* background-color: aqua; */
+  width: 100vw;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.homePage .homepage-links .hp-link-onhoverscreen{
+  background-color: red;
+  width: 30rem;
+  height: 30rem;
+}
+
+/*//////////////Home////////////////*/
+/*//////////////Home////////////////*/
+/*//////////////Home////////////////*/
