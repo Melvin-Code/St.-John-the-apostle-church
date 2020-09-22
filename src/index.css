@@ -164,16 +164,19 @@ a{
 /*//////////////Home////////////////*/
 /*//////////////Home////////////////*/
 /*//////////////Home////////////////*/
-
+.homePage{
+  background-color: #f0e4d4;
+}
 .homePage .hp-herocontainer {
   background-image: url(https://www.miamiarch.org/Atimo_s/Parishes/St%20John%20the%20Apostle.jpg);
   /* background-repeat: no-repeat; */
   background-size: cover;
   height: 70rem;
   background-position: center;
-  width: 100vw;
-  border: solid black 1px;
+  width: 100%;
+  /* border: solid black 1px; */
   position: relative;
+ 
 }
 .homePage .hp-herocontainer .herocontainer-slogan{
   position: absolute;
@@ -204,16 +207,22 @@ a{
 }
 .homePage .homepage-links{
   /* background-color: aqua; */
-  width: 100vw;
+  width: 100%;
   height: 50rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.homePage .homepage-links .hp-link-onhoverscreen{
-  background-color: red;
+.homePage .homepage-links .hp-link-container{
+  background-color:cover;
   width: 30rem;
   height: 30rem;
+  background-image: url('https://c8.alamy.com/comp/R01A9N/illustration-of-the-seven-sacraments-of-catholic-church-from-baptism-confirmation-eucharist-penance-anointing-of-the-sick-holy-orders-to-matrimon-R01A9N.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 black;
+  border-top: solid black 1rem;
 }
 
 /*//////////////Home////////////////*/
