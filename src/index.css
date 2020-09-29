@@ -1,12 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Poppins' ,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+button{
+  appearance: none;
+  border: none;
+  background-color: transparent;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -22,7 +30,11 @@ a{
   text-decoration: none;
   color: black;
 }
-
+#setter{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 /*//////////////NavBar////////////////*/
 /*//////////////NavBar////////////////*/
 /*//////////////NavBar////////////////*/
@@ -165,7 +177,7 @@ a{
 /*//////////////Home////////////////*/
 /*//////////////Home////////////////*/
 .homePage{
-  background-color: #f0e4d4;
+  background-color: white;
 }
 .homePage .hp-herocontainer {
   background-image: url(https://www.miamiarch.org/Atimo_s/Parishes/St%20John%20the%20Apostle.jpg);
@@ -178,6 +190,13 @@ a{
   position: relative;
  
 }
+.overlay{
+  /* background-color: rgb(48 201 233); */
+  background-color: #30cae92d;;
+  height: 100%;
+  width: 100%;
+  
+}
 .homePage .hp-herocontainer .herocontainer-slogan{
   position: absolute;
   top: 50%;
@@ -189,7 +208,7 @@ a{
 .homePage .hp-herocontainer .herocontainer-welcomecontainer{
   width: 100%;
   height: 20rem;
-  background-color: rgba(0, 0, 0, 0.548);
+  background-color: #30cae9f6;
   position: absolute;
   bottom: 0;
 }
@@ -212,19 +231,114 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  box-shadow: black 1px 1px 1px 1px;
 }
 .homePage .homepage-links .hp-link-container{
   background-color:cover;
-  width: 30rem;
+  width: 35rem;
   height: 30rem;
-  background-image: url('https://c8.alamy.com/comp/R01A9N/illustration-of-the-seven-sacraments-of-catholic-church-from-baptism-confirmation-eucharist-penance-anointing-of-the-sick-holy-orders-to-matrimon-R01A9N.jpg');
-  background-size: contain;
+  /* background-image: url('/sacraments.jpg'); */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 0 0 black;
-  border-top: solid black 1rem;
+  box-shadow: 4px 4px 6px -3px black;
+  border-top: solid rgb(48 201 233) 1rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0rem;
+  transition: .5s;
+}
+.homePage .homepage-links #grey{
+  border-top: solid grey 1rem !important;
+  margin-bottom: 2rem;
+  transition: .7s;
+
+}
+.homePage .homepage-links .hp-link-container .hp-link-onhoverscreen{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.356);
+  position: absolute;
+  
+  
+}
+.homePage .homepage-links .hp-link-container .hp-link-start{
+  bottom: -75%;
+}
+.homePage .homepage-links .hp-link-container .hp-link-full{
+  background-color: rgba(0, 0, 0, 0.356);
+  position: absolute;
+  bottom: 0%;
+  animation: Hovering .4s ;
+}
+.homePage .homepage-links .hp-link-container .hp-link-empty{
+  background-color: rgba(0, 0, 0, 0.356);
+  position: absolute;
+  bottom: -75%;
+  animation: lowering .4s ;
+}
+
+.homePage .homepage-links .hp-link-container .hp-link-onhoverscreen .onhoverscreen-text{
+  color: white;
+  font-size: 2.8rem;
+  position: absolute;
+  top: 1.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .5s;
+}
+#textdw{
+  top: 8rem !important;
+}
+.homePage .homepage-links .hp-link-container .hp-link-onhoverscreen .onhoverscreen-button > a{
+  border-radius: .8rem;
+  /* width: 4rem;
+  height: 2rem; */
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  /* margin-top: 4rem; */
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid white .2rem;
+  transition: .5s;
+  
+}
+.homePage .homepage-links .hp-link-container .hp-link-onhoverscreen .onhoverscreen-button > a:hover {
+  background-color: white;
+  color: #30cae9;
+}
+@keyframes Hovering {
+  0%{
+    bottom: -75%;
+  }
+  100%{
+    bottom: 0%;
+  }
+}
+@keyframes lowering {
+  0%{
+    bottom: 0%;
+  }
+  100%{
+    bottom: -75%;
+  }
 }
 
 /*//////////////Home////////////////*/
 /*//////////////Home////////////////*/
 /*//////////////Home////////////////*/
+
+/*//////////////footer////////////////*/
+/*//////////////footer////////////////*/
+/*//////////////footer////////////////*/
+.footer{
+  width: 100%;
+  height: 30rem;
+  background-color: grey;
+}
+/*//////////////footer////////////////*/
+/*//////////////footer////////////////*/
+/*//////////////footer////////////////*/
