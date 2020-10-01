@@ -61,8 +61,10 @@ class Home extends Component {
             link="/sacraments"
           />
         </div>
+        
         {console.log(this.state)}
         <Footer/>
+        
       </div>
     );
   }
