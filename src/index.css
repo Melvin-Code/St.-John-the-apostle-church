@@ -231,7 +231,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  box-shadow:black 1px -4px 13px 0px;
+  box-shadow:black 1px -4px 6px 0px;
 }
 .homePage .homepage-links .hp-link-container{
   background-color:cover;
@@ -338,7 +338,48 @@ a{
 .footer{
   width: 100%;
   height: 30rem;
-  background-color: rgba(0, 0, 0, 0.349)
+  background-color: rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.footer .location-holder{
+height: 100%;
+display: flex;
+}
+.footer .location-holder .map-container{
+  clip-path: polygon(50% 0, 60% 14%, 100% 15%, 100% 100%, 0 100%, 0 15%, 40% 15%);
+  background-color: #30cae9;
+  height: 50rem;
+
+}
+.footer .adress-holder{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .adress-holder .holder-txt{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+
+}
+.footer .adress-holder .holder-txt .txt-section{
+  display: inline-block;
+  margin: 1rem 0;
+}
+.footer .contact-holder{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.footer .contact-holder .holder-txt{
+  font-size: 1.5rem;
 }
 /*//////////////footer////////////////*/
 /*//////////////footer////////////////*/
