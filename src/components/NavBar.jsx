@@ -1,12 +1,31 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+
 class NavBar extends Component {
   state = {
     drop: false,
     hide: false,
     start: true,
-    counter: 0
+    counter: 0,
+    changingBar: 'white',
+    
+    
   };
+  componentDidMount(){
+    this.listener = document.addEventListener("scroll", e => {
+      var scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 120) {
+        if (this.state.status !== "amir") {
+          this.setState({ status: "amir" });
+        }
+      } else {
+        if (this.state.status !== "top") {
+          this.setState({ status: "top" });
+      }
+    }
+ });
+  }
+  
   droper = (e) => {
     this.setState({
       drop: true,
@@ -32,9 +51,13 @@ class NavBar extends Component {
         return 'hide'
     }
   }
+
   render() {
+
     return (
-      <div className="navbar">
+      <div id={this.state.status} className="navbar" >
+      
+      {console.log(this.state)}
         <Link to="/">
           <h1 className="title-site">
             <span className="title-site--main">ST. JOHN THE APOSTLE</span>

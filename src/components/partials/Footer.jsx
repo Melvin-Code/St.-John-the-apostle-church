@@ -4,8 +4,9 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <div className="loaction-holder">
-          {/* <p className="holder-txt">Location</p> */}<div className='map-container'>
+        <div className="location-holder">
+        <h3 className='location-title' >Find Us</h3>
+         <div className='map-container'>
           <iframe
             
             title='mapframe'

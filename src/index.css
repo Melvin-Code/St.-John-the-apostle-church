@@ -50,6 +50,15 @@ a{
   position: fixed;
   z-index: 5;
   color: #fff;
+  transition: .5s;
+}
+#amir{
+  background-color: #30cae9f6;
+  box-shadow: black 0px 0px 12px -8px;
+}
+.blue{
+  background-color: #30cae9f6;
+  
 }
 .navbar .title-site{
   margin-left: 2rem;
@@ -337,22 +346,47 @@ a{
 /*//////////////footer////////////////*/
 .footer{
   width: 100%;
-  height: 30rem;
+  height: 40rem;
   background-color: rgba(0,0,0,0.05);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   
 }
+.footer .location-title{
+position: absolute;
+top: 3rem;
+left: 50%;
+transform: translateX(-50%);
+font-size: 2rem;
+font-weight: 500;
+}
 .footer .location-holder{
 height: 100%;
 display: flex;
+align-items: center;
+position: relative;
 }
 .footer .location-holder .map-container{
-  clip-path: polygon(50% 0, 60% 14%, 100% 15%, 100% 100%, 0 100%, 0 15%, 40% 15%);
-  background-color: #30cae9;
-  height: 50rem;
+  clip-path: polygon(50% 0, 55% 5%, 100% 5%, 100% 100%, 0 100%, 0 5%, 45% 5%);
+  background-color: transparent;
+  height: fit-content;
+  padding: 2.5rem 1rem 1rem 1rem;
+  border-radius: 1rem;
+  transition: .5s;
 
+}
+.footer .location-holder .map-container:hover{
+  background-color: #30cae9 ;
+}
+.footer .location-holder .map-container:hover .map{
+  border-radius: .5rem;
+  box-shadow: none;
+}
+.map{
+  border-radius: 0;
+  transition: .5s;
+  box-shadow: black 0 0 6px -3px;;
 }
 .footer .adress-holder{
   height: 100%;
