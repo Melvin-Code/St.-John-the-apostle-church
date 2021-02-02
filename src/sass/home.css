@@ -1,0 +1,203 @@
+.homePage {
+  background-color: white;
+}
+
+.homePage .hp-herocontainer {
+  background-image: url(https://www.miamiarch.org/Atimo_s/Parishes/St%20John%20the%20Apostle.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  height: 70rem;
+  background-position: center;
+  width: 100%;
+  /* border: solid black 1px; */
+  position: relative;
+}
+
+.overlay {
+  /* background-color: rgb(48 201 233); */
+  background-color: #30cae92d;
+  height: 100%;
+  width: 100%;
+}
+
+.homePage .hp-herocontainer .herocontainer-slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3rem;
+}
+
+.homePage .hp-herocontainer .herocontainer-welcomecontainer {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #30cae9f6;
+  position: absolute;
+  bottom: 0;
+}
+
+.homePage .hp-herocontainer .herocontainer-welcomecontainer .herocontainer-welcometext {
+  color: white;
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 2rem 0rem 0 0rem;
+}
+
+.homePage .hp-herocontainer .herocontainer-welcomecontainer .herocontainer-welcometext--sub {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding: .5rem 5rem 2rem 5rem;
+}
+
+.homePage .homepage-links {
+  /* background-color: aqua; */
+  width: 100%;
+  height: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-shadow: black 1px -4px 6px 0px;
+          box-shadow: black 1px -4px 6px 0px;
+  padding: 3rem 0 4rem 0;
+}
+
+.homePage .homepage-links .hp-link-container {
+  background-color: cover;
+  width: 35rem;
+  height: 30rem;
+  min-width: 35rem;
+  margin: 1rem .5rem;
+  /* background-image: url('/sacraments.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 4px 4px 6px -3px black;
+          box-shadow: 4px 4px 6px -3px black;
+  border-top: solid #30c9e9 1rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.homePage .homepage-links #grey {
+  border-top: solid grey 1rem !important;
+  margin-bottom: 2rem;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.homePage .homepage-links .hp-link-container .hp-link-onhoverscreen {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.356);
+  position: absolute;
+}
+
+.homePage .homepage-links .hp-link-container .hp-link-start {
+  bottom: -75%;
+}
+
+.homePage .homepage-links .hp-link-container .hp-link-full {
+  background-color: rgba(0, 0, 0, 0.356);
+  position: absolute;
+  bottom: 0%;
+  -webkit-animation: Hovering .4s;
+          animation: Hovering .4s;
+}
+
+.homePage .homepage-links .hp-link-container .hp-link-empty {
+  background-color: rgba(0, 0, 0, 0.356);
+  position: absolute;
+  bottom: -75%;
+  -webkit-animation: lowering .4s;
+          animation: lowering .4s;
+}
+
+.homePage .homepage-links .hp-link-container .hp-link-onhoverscreen .onhoverscreen-text {
+  color: white;
+  font-size: 2.8rem;
+  position: absolute;
+  top: 1.8rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#textdw {
+  top: 8rem !important;
+}
+
+.homePage .homepage-links .hp-link-container .hp-link-onhoverscreen .onhoverscreen-button > a {
+  border-radius: .8rem;
+  /* width: 4rem;
+    height: 2rem; */
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  /* margin-top: 4rem; */
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: solid white .2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.homePage .homepage-links .hp-link-container .hp-link-onhoverscreen .onhoverscreen-button > a:hover {
+  background-color: white;
+  color: #30cae9;
+}
+
+@-webkit-keyframes Hovering {
+  0% {
+    bottom: -75%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+@keyframes Hovering {
+  0% {
+    bottom: -75%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+@-webkit-keyframes lowering {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: -75%;
+  }
+}
+
+@keyframes lowering {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: -75%;
+  }
+}
+/*# sourceMappingURL=home.css.map */

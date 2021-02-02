@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-
-import Footer from "./partials/Footer";
 import Hotlinks from "./partials/Hotlinks";
 
 class Home extends Component {
@@ -63,7 +61,7 @@ class Home extends Component {
         </div>
         
         {console.log(this.state)}
-        <Footer/>
+        
         
       </div>
     );

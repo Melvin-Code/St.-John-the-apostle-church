@@ -12,8 +12,7 @@ class Footer extends Component {
             title='mapframe'
             className="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.3205307163093!2d-80.27498648497114!3d25.825981283607728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a6b8c72fb9%3A0x2a31fd8c67d4c759!2sSt%20John%20the%20Apostle%20Miami%20Catholic%20Church!5e0!3m2!1sen!2sus!4v1601593988599!5m2!1sen!2sus"
-            width="250"
-            height="225"
+            
             frameBorder="0"
             style={{ border: "0" }}
           ></iframe>
@@ -33,7 +32,7 @@ class Footer extends Component {
         </div>
         <div className="contact-holder">
           <p className="holder-txt">Contact Us</p>
-          <div>
+          <div className='icon-container'>
             <a href='/' className="face-link">
               <i className="fab fa-facebook-square"></i>
             </a>
