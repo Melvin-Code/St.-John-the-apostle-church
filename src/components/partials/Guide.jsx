@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Switch, Route, Link } from "react-router-dom";
 export default class Guide extends Component {
     render() {
         return (
@@ -8,25 +8,25 @@ export default class Guide extends Component {
               <div className="label-drop">Sacraments</div>
               <div className="content-container">
                 <div id="Baptism" className="content">
-                  Baptism
+                  <Link to='/sacraments/baptisim'>Baptism</Link>
                 </div>
                 <div id="Confession/Reconsilation" className="content">
-                  Confession/Reconsilation
+                  <Link to='#'>Confession/Reconsilation</Link>
                 </div>
                 <div id="Confirmation" className="content">
-                  Confirmation
+                  <Link to='#'>Confirmation</Link>
                 </div>
                 <div id="First Holy Comunnion" className="content">
-                  First Holy Comunnion
+                  <Link to='#'>First Holy Comunnion</Link>
                 </div>
                 <div id="Holy Orders" className="content">
-                  Holy Orders
+                  <Link to='#'>Holy Orders</Link>
                 </div>
                 <div id="Marriage" className="content">
-                  Marriage
+                  <Link to='#'>Marriage</Link>
                 </div>
                 <div id="Anointing of the Sick" className="content">
-                  Anointing of the Sick
+                  <Link to='#'>Anointing of the Sick</Link>
                 </div>
               </div>
             </ul>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-let loc: window.location.pathname
+
 class NavBar extends Component {
   state = {
     drop: false,
@@ -8,27 +8,47 @@ class NavBar extends Component {
     start: true,
     counter: 0,
     changingBar: "white",
-    loaction: window.location.pathname
+    loaction: window.location.pathname,
   };
   componentDidMount() {
+    this.reaction();
+    this.colorLoad();
     this.listener = document.addEventListener("scroll", (e) => {
       var scrolled = document.scrollingElement.scrollTop;
-     if(this.state.loaction === '/'){
-      if (scrolled >= 120) {
-        if (this.state.status !== "amir") {
-          this.setState({ status: "amir"});
+
+      if (window.location.pathname !== this.state.loaction) {
+        this.setState({ loaction: window.location.pathname });
+        if (this.state.loaction === "/") {
+          if (scrolled >= 120) {
+            if (this.state.status !== "amir") {
+              this.setState({ status: "amir" });
+            }
+          } else {
+            if (this.state.status !== "top") {
+              this.setState({ status: "top" });
+            }
+          }
+        } else {
+          this.setState({ status: "amir" });
+          console.log("rrrrrr");
         }
       } else {
-        
-        if (this.state.status !== "top") {
-          this.setState({ status: "top" });
+        if (this.state.loaction === "/") {
+          if (scrolled >= 120) {
+            if (this.state.status !== "amir") {
+              this.setState({ status: "amir" });
+            }
+          } else {
+            if (this.state.status !== "top") {
+              this.setState({ status: "top" });
+            }
+          }
+        } else {
+          this.setState({ status: "amir" });
+          console.log("rrrrrr");
         }
       }
-    }else{
-      this.setState({ status: "amir"});
-    }
     });
-    this.colorLoad()
   }
 
   droper = (e) => {
@@ -70,31 +90,52 @@ class NavBar extends Component {
       return "hide";
     }
   };
-
+  actions = () => {
+    this.setState({ loaction: window.location.pathname });
+  };
+  reaction = () => {
+    if (window.location.pathname !== this.state.loaction) {
+      this.actions();
+    }
+  };
   colorChangeB = () => {
-    this.setState({ status: "amir" });
+    this.setState({ status: "amir", loaction: window.location.pathname });
   };
   colorChangeW = () => {
-    this.setState({ status: "top" });
+    this.setState({ status: "top", loaction: window.location.pathname });
   };
-  colorLoad = () =>{
-    console.log('run')
-    this.setState({ loaction: window.location.pathname});
-    if(loc !== '/'){
-      console.log('blue')
-      this.colorChangeB()
+  colorLoad = () => {
+    console.log("run");
+    if (this.state.loaction !== window.location.pathname) {
+      this.setState({ loaction: window.location.pathname });
+      if (this.state.loaction === window.location.pathname) {
+        if (this.state.loaction !== "/") {
+          console.log("blue");
+          this.colorChangeB();
+        } else {
+          console.log("white");
+          this.colorChangeW();
+        }
+      } else {
+      }
     }else{
-      console.log('white')
-      this.colorChangeW()
+      if (this.state.loaction !== "/") {
+        console.log("blue");
+        this.colorChangeB();
+      } else {
+        console.log("white");
+        this.colorChangeW();
+      }
     }
-  }
+  };
+  
 
   render() {
-    
+    console.log(this.state.loaction);
     return (
-      <div  id={this.state.status} className="navbar">
+      <div id={this.state.status} className="navbar">
         {console.log(window.location.pathname)}
-        
+
         <Link onClick={this.colorChangeW} to="/">
           <h1 className="title-site">
             <span className="title-site--main">ST. JOHN THE APOSTLE</span>
