@@ -1,18 +1,10 @@
 import React, { Component } from "react";
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-export default class Baptisim extends Component {
-    targetElement = null
 
-    componentDidMount() {
-        this.targetElement = document.querySelector("#s-t")
-        console.log(this.targetElement)
-    }
-    showTargetElement = () => {
-        disableBodyScroll(this.targetElement)
-    }
+export default class Baptisim extends Component {
+    
 
   render() {
-      this.showTargetElement()
+      
     return (
       <div id='s-t' className="sacr-wrap">
         <div className="img-container">

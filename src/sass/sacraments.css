@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 .sacraments {
   padding-top: 9rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -35,9 +32,4 @@
   font-size: 1.5rem;
   color: #30cae9;
   text-align: left;
-}
-/*# sourceMappingURL=sacraments.css.map */
-=======
-
-/*# sourceMappingURL=sacraments.css.map *//*# sourceMappingURL=sacraments.css.map */
->>>>>>> 834bf6810d7408fd4b0381f30907eddfa58dbd02
+}/*# sourceMappingURL=sacraments.css.map */
