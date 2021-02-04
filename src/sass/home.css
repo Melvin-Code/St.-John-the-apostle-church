@@ -24,8 +24,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: #fff;
   font-size: 3rem;
 }
@@ -51,24 +50,17 @@
   color: #fff;
   font-size: 2rem;
   text-align: center;
-  padding: .5rem 5rem 2rem 5rem;
+  padding: 0.5rem 5rem 2rem 5rem;
 }
 
 .homePage .homepage-links {
   /* background-color: aqua; */
   width: 100%;
   height: 50rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-shadow: black 1px -4px 6px 0px;
-          box-shadow: black 1px -4px 6px 0px;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: black 1px -4px 6px 0px;
   padding: 3rem 0 4rem 0;
 }
 
@@ -77,26 +69,23 @@
   width: 35rem;
   height: 30rem;
   min-width: 35rem;
-  margin: 1rem .5rem;
+  margin: 1rem 0.5rem;
   /* background-image: url('/sacraments.jpg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-box-shadow: 4px 4px 6px -3px black;
-          box-shadow: 4px 4px 6px -3px black;
+  box-shadow: 4px 4px 6px -3px black;
   border-top: solid #30c9e9 1rem;
   position: relative;
   overflow: hidden;
   margin-bottom: 0rem;
-  -webkit-transition: .5s;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .homePage .homepage-links #grey {
   border-top: solid grey 1rem !important;
   margin-bottom: 2rem;
-  -webkit-transition: .7s;
-  transition: .7s;
+  transition: 0.7s;
 }
 
 .homePage .homepage-links .hp-link-container .hp-link-onhoverscreen {
@@ -114,16 +103,16 @@
   background-color: rgba(0, 0, 0, 0.356);
   position: absolute;
   bottom: 0%;
-  -webkit-animation: Hovering .4s;
-          animation: Hovering .4s;
+  -webkit-animation: Hovering 0.4s;
+          animation: Hovering 0.4s;
 }
 
 .homePage .homepage-links .hp-link-container .hp-link-empty {
   background-color: rgba(0, 0, 0, 0.356);
   position: absolute;
   bottom: -75%;
-  -webkit-animation: lowering .4s;
-          animation: lowering .4s;
+  -webkit-animation: lowering 0.4s;
+          animation: lowering 0.4s;
 }
 
 .homePage .homepage-links .hp-link-container .hp-link-onhoverscreen .onhoverscreen-text {
@@ -132,10 +121,8 @@
   position: absolute;
   top: 1.8rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: .5s;
-  transition: .5s;
+  transform: translateX(-50%);
+  transition: 0.5s;
 }
 
 #textdw {
@@ -143,9 +130,9 @@
 }
 
 .homePage .homepage-links .hp-link-container .hp-link-onhoverscreen .onhoverscreen-button > a {
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   /* width: 4rem;
-    height: 2rem; */
+  height: 2rem; */
   font-size: 2rem;
   padding: 2rem 3rem;
   /* margin-top: 4rem; */
@@ -153,11 +140,9 @@
   position: absolute;
   top: 60%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border: solid white .2rem;
-  -webkit-transition: .5s;
-  transition: .5s;
+  transform: translate(-50%, -50%);
+  border: solid white 0.2rem;
+  transition: 0.5s;
 }
 
 .homePage .homepage-links .hp-link-container .hp-link-onhoverscreen .onhoverscreen-button > a:hover {
@@ -182,7 +167,6 @@
     bottom: 0%;
   }
 }
-
 @-webkit-keyframes lowering {
   0% {
     bottom: 0%;
@@ -191,7 +175,6 @@
     bottom: -75%;
   }
 }
-
 @keyframes lowering {
   0% {
     bottom: 0%;
@@ -199,5 +182,4 @@
   100% {
     bottom: -75%;
   }
-}
-/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=home.css.map */
