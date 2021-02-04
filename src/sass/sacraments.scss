@@ -1,0 +1,34 @@
+.sacraments{
+    padding-top: 9rem;
+    display: flex;
+}
+.sacr-container{
+    background-color: #30cae910
+
+}
+.sacr-wrap{
+    padding: 3rem;
+    height: 81.5vh;
+    overflow-y: auto;
+}
+
+.sacr-wrap .img-container{
+overflow: hidden;
+width: 35rem;
+height: fit-content;
+float: left;
+margin-right: 2rem;
+sacrame
+}
+.sacr-wrap .img-container .sacr-image{
+width: 50rem;
+height: auto
+}
+.sacr-wrap .sacr-title{
+
+}
+.sacr-wrap .sacr-text{
+    font-size: 1.5rem;
+    color: #30cae9;
+    text-align: left;
+}

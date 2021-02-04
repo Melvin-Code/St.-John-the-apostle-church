@@ -4,7 +4,7 @@ import Baptisim from './sacrament-text/Baptisim';
 export default class SacrRender extends Component {
     render() {
         return (
-            <div>
+            <div className='sacr-container'>
                 <Switch>
                     <Route exact path='/sacraments/baptisim'>
                     <Baptisim/>

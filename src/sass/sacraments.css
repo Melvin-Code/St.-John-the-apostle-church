@@ -1,1 +1,38 @@
-/* No CSS *//*# sourceMappingURL=sacraments.css.map */
+.sacraments {
+  padding-top: 9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sacr-container {
+  background-color: #30cae910;
+}
+
+.sacr-wrap {
+  padding: 3rem;
+  height: 81.5vh;
+  overflow-y: auto;
+}
+
+.sacr-wrap .img-container {
+  overflow: hidden;
+  width: 35rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  float: left;
+  margin-right: 2rem;
+}
+
+.sacr-wrap .img-container .sacr-image {
+  width: 50rem;
+  height: auto;
+}
+
+.sacr-wrap .sacr-text {
+  font-size: 1.5rem;
+  color: #30cae9;
+  text-align: left;
+}
+/*# sourceMappingURL=sacraments.css.map */
