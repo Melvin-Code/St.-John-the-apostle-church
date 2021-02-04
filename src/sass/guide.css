@@ -1,7 +1,5 @@
 .guide-container {
   background-color: #30cae9f6;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 88vh;
   width: -webkit-fit-content;
@@ -12,24 +10,40 @@
   color: white;
 }
 
+.guide-container .guide-table .label-drop {
+  font-size: 3.1rem;
+  margin: 2rem 0rem 0 2rem;
+  cursor: auto;
+}
+
 .guide-container .guide-table .content-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .guide-container .guide-table .content-container .content {
   color: white;
   text-align: left;
+  font-size: 3rem;
+  padding: 0.75rem 1.5rem 0 5rem;
+  cursor: pointer;
+  transition: 0.2s;
 }
-/*# sourceMappingURL=guide.css.map */
+
+.guide-container .guide-table .content-container .content > a {
+  color: white;
+  transition: 0.2s;
+}
+
+.guide-container .guide-table .content-container .content:hover {
+  background-color: white;
+  box-shadow: inset 3px 2px 5px -2px #727274;
+}
+
+.guide-container .guide-table .content-container .content:hover > a {
+  color: #30cae9f6;
+}/*# sourceMappingURL=guide.css.map */
