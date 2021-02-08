@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 body {
   margin: 0;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Poppins' ,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -15,7 +15,7 @@ button {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 * {
@@ -38,8 +38,39 @@ a {
   position: relative;
 }
 
-.spacer {
-  height: 9rem;
+.image-gallery-image {
+  width: 100% !important;
+  height: 81.5rem;
+  max-height: none !important;
+  z-index: -1 !important;
+}
+
+.image-gallery-slide > div {
+  overflow: hidden !important;
+  height: 60rem;
+  z-index: 3;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #328798f6;
+  border-radius: 0 0 .8rem .8rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #256572f6;
+  border-radius: .8rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1a4750f6;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -47,62 +78,71 @@ a {
     font-size: 50%;
   }
 }
+
 @media only screen and (max-width: 894px) {
   .homePage .homepage-links {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100rem !important;
   }
-
   .homePage .hp-herocontainer .herocontainer-welcomecontainer .herocontainer-welcometext--sub {
     font-size: 1.8rem !important;
   }
-
   .homePage .homepage-links .hp-link-container {
     width: 45rem !important;
     height: 40rem !important;
   }
 }
+
+@media only screen and (max-width: 864px) {
+  .image-gallery-image {
+    height: 74rem !important;
+  }
+}
+
 @media only screen and (max-width: 765px) {
   html {
     font-size: 40%;
   }
 }
+
 @media only screen and (max-width: 633px) {
   html {
     font-size: 30%;
   }
-
   .footer {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
     height: fit-content !important;
   }
-
   .location-holder {
     height: auto !important;
     margin-top: 5% !important;
   }
-
   .map-container .map {
     height: 40rem !important;
     width: 45rem !important;
   }
-
   .location-title {
     font-size: 3rem !important;
   }
-
   .holder-txt {
     font-size: 3rem !important;
   }
-
   .footer > div {
     margin: 3rem 0;
   }
 }
+
 @media only screen and (max-width: 508px) {
   html {
     font-size: 20%;
   }
-}/*# sourceMappingURL=global.css.map */
+}
+/*# sourceMappingURL=global.css.map */

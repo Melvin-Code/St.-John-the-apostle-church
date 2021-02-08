@@ -5,9 +5,12 @@ import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./components/partials/Footer";
 import Sacraments from "./components/Sacraments";
+import About from "./components/About";
+import about from './components/partials/@constants/about'
 function App() {
   return (
     <Router>
+    {console.log(about)}
       <div className="App">
         <NavBar />
         <Switch>
@@ -16,6 +19,12 @@ function App() {
           </Route>
           <Route path='/sacraments'>
             <Sacraments/>
+          </Route>
+          <Route path='/about/history'>
+            <About about={about.history} ids={'histor'}/>
+          </Route>
+          <Route path='/about/ourpatronsaints'>
+            <About about={about.patron} ids={'patr'}/>
           </Route>
         </Switch>
         <Footer/>

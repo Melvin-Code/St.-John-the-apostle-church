@@ -7,20 +7,7 @@ class Home extends Component {
     barColor: "",
     textPos: "",
   };
-  onMe = () => {
-    this.setState({
-      nonHove: "hp-link-full",
-      barColor: "grey",
-      textPos: "textdw",
-    });
-  };
-  outOfMe = () => {
-    this.setState({
-      nonHove: "hp-link-empty",
-      barColor: "",
-      textPos: "",
-    });
-  };
+  
   render() {
     return (
       <div className="homePage">
@@ -60,7 +47,7 @@ class Home extends Component {
           />
         </div>
         
-        {console.log(this.state)}
+       
         
         
       </div>

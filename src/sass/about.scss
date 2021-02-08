@@ -1,0 +1,74 @@
+.about{
+    padding-top: 9rem;
+}
+
+.about > div{
+    position: relative;
+    overflow: hidden;
+    height: 60rem
+}
+.about .phrase{
+    color: white;
+    position: absolute;
+    top: 50%;
+    font-size: 4rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.about .about-material{
+ width: 100%;
+}
+.about  .about-txt{
+    padding: 5rem 9rem;
+    font-size: 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.wraper {
+    position: relative;
+}
+.about  .about-txt .about-card{
+    // border: 3px solid #30cae9f6;
+    background-color: #328798f6;
+    color: white;
+    border-radius: .8rem;
+    padding: 2rem;
+    margin: 2rem 2rem;
+    width: 30rem;
+    box-shadow: 0px 1px 6px -1px black;
+    overflow-y: auto;
+    max-height: 20rem;
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.about  .about-txt .about-card .year{
+    border-radius: .8rem;
+    background-color:white;
+    color: #328798f6;
+    width: fit-content;
+    font-size: 2rem;
+    font-weight: bold;
+    height: auto;
+    padding: 1rem 2rem; 
+    margin-bottom: 2rem;
+    // position : absolute;
+    // top: 0;
+    // left: 50%;
+    // transform: translate(-50%, -35%);
+    box-shadow: 0px -4px 5px -4px black;
+}
+#histor{
+    height: 20rem
+}
+#patr{
+    width: 100%;
+    height: fit-content;
+    max-height: none;
+    font-size: 2rem;
+}

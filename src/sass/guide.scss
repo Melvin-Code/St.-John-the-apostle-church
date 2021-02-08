@@ -1,5 +1,5 @@
 .guide-container{
-    background-color: #30cae9f6;
+    background-color: #328798f6;
     display: flex;
     height: 88vh;
     width: fit-content;
@@ -23,22 +23,26 @@
 .guide-container .guide-table  .content-container .content{
     color: white;
     text-align: left;
-    font-size: 3rem;
+    font-size: 2.2rem;
     padding: .75rem 1.5rem 0 5rem;
     cursor: pointer;
     transition: .2s;
     
 }
-.guide-container .guide-table  .content-container .content > a {
+.guide-container .guide-table  .content-container .content {
     color: white;
     transition: .2s
 }
 .guide-container .guide-table  .content-container .content:hover{
-    // color: #30cae9f6;
+    color: #328798f6;
     background-color: white;
     // border: 1px solid #218599f6;
     box-shadow: inset 3px 2px 5px -2px #727274;
 }
-.guide-container .guide-table  .content-container .content:hover > a{
-    color: #30cae9f6;
+.guide-container .guide-table  .content-container .content:focus{
+    color: #328798f6;
+    background-color: white;
+    // border: 1px solid #218599f6;
+    box-shadow: inset 3px 2px 5px -2px #727274;
 }
+

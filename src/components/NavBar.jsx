@@ -18,13 +18,13 @@ class NavBar extends Component {
 
       if (window.location.pathname !== this.state.loaction) {
         this.setState({ loaction: window.location.pathname });
-        if (this.state.loaction === "/") {
+        if (this.state.loaction === "/" ) {
           if (scrolled >= 120) {
             if (this.state.status !== "amir") {
               this.setState({ status: "amir" });
             }
           } else {
-            if (this.state.status !== "top") {
+            if (this.state.status !== "top") { 
               this.setState({ status: "top" });
             }
           }
@@ -118,7 +118,7 @@ class NavBar extends Component {
         }
       } else {
       }
-    }else{
+    } else {
       if (this.state.loaction !== "/") {
         console.log("blue");
         this.colorChangeB();
@@ -128,7 +128,6 @@ class NavBar extends Component {
       }
     }
   };
-  
 
   render() {
     console.log(this.state.loaction);
@@ -144,30 +143,30 @@ class NavBar extends Component {
         </Link>
         <div className="navbar-box menu">
           <div className="navbar-box-btn">
-            <Link onClick={this.colorChangeB} to="/sacraments">
+            <Link onClick={this.colorChangeB} to="/sacraments/baptisim">
               Sacraments
             </Link>
             <div id="sacr" className="dropdwn-container">
               <ul className="dropdwn-list sacra">
-                <Link onClick={this.colorChangeB} to="/sacraments">
+                <Link onClick={this.colorChangeB} to="/sacraments/baptisim">
                   <p className="dropdwn-text">Baptism</p>
                 </Link>
-                <Link onClick={this.colorChangeB} to="/sacraments">
+                <Link onClick={this.colorChangeB} to="/sacraments/ConfessionReconsilation">
                   <p className="dropdwn-text">Confession/Reconsilation</p>
                 </Link>
-                <Link onClick={this.colorChangeB} to="/sacraments">
+                <Link onClick={this.colorChangeB} to="/sacraments/Confirmation">
                   <p className="dropdwn-text">Confirmation</p>
                 </Link>
-                <Link onClick={this.colorChangeB} to="/sacraments">
+                <Link onClick={this.colorChangeB} to="/sacraments/FirstHolyComunnion">
                   <p className="dropdwn-text">First Holy Comunnion</p>
                 </Link>
-                <Link onClick={this.colorChangeB} to="/sacraments">
+                <Link onClick={this.colorChangeB} to="/sacraments/HolyOrders">
                   <p className="dropdwn-text">Holy Orders</p>
                 </Link>
-                <Link onClick={this.colorChangeB} to="/sacraments">
+                <Link onClick={this.colorChangeB} to="/sacraments/Marriage">
                   <p className="dropdwn-text">Marriage</p>
                 </Link>
-                <Link onClick={this.colorChangeB} to="/sacraments">
+                <Link onClick={this.colorChangeB} to="/sacraments/AnointingoftheSick">
                   <p className="dropdwn-text">Anointing of the Sick</p>
                 </Link>
               </ul>
@@ -179,13 +178,13 @@ class NavBar extends Component {
             </Link>
             <div id="about" className="dropdwn-container">
               <ul className="dropdwn-list abou">
-                <Link onClick={this.colorChangeB} to="/about">
+                <Link onClick={this.colorChangeB} to="/about/history">
                   <p className="dropdwn-text">History</p>
                 </Link>
-                <Link onClick={this.colorChangeB} to="/about">
+                <Link onClick={this.colorChangeB} to="/about/ourpatronsaints">
                   <p className="dropdwn-text">Our Patron Saints</p>
                 </Link>
-                <Link onClick={this.colorChangeB} to="/about">
+                <Link onClick={this.colorChangeB} to="/about/ministries">
                   <p className="dropdwn-text">Ministries</p>
                 </Link>
                 <Link onClick={this.colorChangeB} to="/about">

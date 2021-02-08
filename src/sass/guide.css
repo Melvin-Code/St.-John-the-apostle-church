@@ -1,5 +1,7 @@
 .guide-container {
-  background-color: #30cae9f6;
+  background-color: #328798f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 88vh;
   width: -webkit-fit-content;
@@ -17,33 +19,48 @@
 }
 
 .guide-container .guide-table .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .guide-container .guide-table .content-container .content {
   color: white;
   text-align: left;
-  font-size: 3rem;
-  padding: 0.75rem 1.5rem 0 5rem;
+  font-size: 2.2rem;
+  padding: .75rem 1.5rem 0 5rem;
   cursor: pointer;
-  transition: 0.2s;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
-.guide-container .guide-table .content-container .content > a {
+.guide-container .guide-table .content-container .content {
   color: white;
-  transition: 0.2s;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .guide-container .guide-table .content-container .content:hover {
+  color: #328798f6;
   background-color: white;
-  box-shadow: inset 3px 2px 5px -2px #727274;
+  -webkit-box-shadow: inset 3px 2px 5px -2px #727274;
+          box-shadow: inset 3px 2px 5px -2px #727274;
 }
 
-.guide-container .guide-table .content-container .content:hover > a {
-  color: #30cae9f6;
-}/*# sourceMappingURL=guide.css.map */
+.guide-container .guide-table .content-container .content:focus {
+  color: #328798f6;
+  background-color: white;
+  -webkit-box-shadow: inset 3px 2px 5px -2px #727274;
+          box-shadow: inset 3px 2px 5px -2px #727274;
+}
+/*# sourceMappingURL=guide.css.map */

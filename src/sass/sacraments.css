@@ -1,5 +1,7 @@
 .sacraments {
   padding-top: 9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -28,8 +30,13 @@
   height: auto;
 }
 
+.sacr-wrap .sacr-title {
+  font-size: 2rem;
+}
+
 .sacr-wrap .sacr-text {
   font-size: 1.5rem;
-  color: #30cae9;
+  color: black;
   text-align: left;
-}/*# sourceMappingURL=sacraments.css.map */
+}
+/*# sourceMappingURL=sacraments.css.map */
